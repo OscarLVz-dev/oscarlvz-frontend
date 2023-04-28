@@ -1,3 +1,63 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+
+$white: #ffffff;
+$dark: #000000;
+$gray: #67696b;
+$green: #2c5234;
+$gold: #9C8412;
+$gold-o10:#f3efe4;
+$gold-o60:#beab70;
+
+$primary: #2c5234;
+
+$cancelButtonColor: #9b9b9b;
+$confirmButtonColor: #2c5234;
+
+html {
+    overflow-y:scroll;
+}
+
+input, button, a, p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: $gold-o10;
+}
+
+h1,h2,h3,h4,h5,h6, label{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+label{
+    color: $gray;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+    background: $primary !important;
+    border-color: $primary !important;
+}
+
+a{
+    color: $primary;
+}
+
+a:hover{
+    color: $gray;
+    text-decoration: none;
+}
+
+.material-icons{
+    color: $gray;
+    cursor: pointer;
+}
+
+.material-icons:hover{
+    color: $primary;
+}
+
+.swal2-height-auto{
+    padding-right: 0px !important;
+}
