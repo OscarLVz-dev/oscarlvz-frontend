@@ -1,5 +1,12 @@
 @import "../styles.scss";
 
+.subtitle{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #9aa4bf;
+}
+
 .user-data-card {
     background: $blue;
 }
@@ -34,6 +41,7 @@
     text-align: center;
     font-size: 24px;
     font-weight: 700;
+    margin: 0;
 }
 
 .card {
