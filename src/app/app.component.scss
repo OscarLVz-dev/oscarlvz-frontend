@@ -1,23 +1,29 @@
 @import "../styles.scss";
 
+.user-data-card {
+    background: $blue;
+}
+
 .bar {
     width: 100%;
-    height: 160px;
-    max-height: 160px;
-    border-radius: 5px 5px 0px 0px;
+    height: 250px;
+    max-height: 250px;
+    padding: 0;
+    margin: 0;
 }
 
 .userPhoto {
     border-radius: 100%;
     max-width: 140px;
     position: absolute;
-    top: 50px;
+    top: 150px;
     border: 4px solid white;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     text-align: center;
+    padding: 0;
 }
 
 .user-name {
@@ -27,6 +33,6 @@
     margin-top: 35px;
 }
 
-.card{
+.card {
     overflow: hidden;
 }

@@ -1,12 +1,11 @@
-$white: #ffffff;
-$gold-o10: #f3efe4;
-$gold-o60: #beab70;
-$primary: #2c5234;
+$blue: #1d2333;
+$blue-demon: #161b28;
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
 }
 
 body {
-    background: $gold-o10;
+    background: $blue-demon;
 }
