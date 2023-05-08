@@ -1,4 +1,63 @@
-app-navbar{
-    position: absolute;
+@import "../styles.scss";
+
+.subtitle{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: $gray;
+}
+
+.social{
+    margin: 0px 7px;
+    border: none;
+}
+
+.telegram{
+    background: $telegram-blue;
+}
+
+.instagram{
+    background: $instagram-pink;
+}
+
+
+.user-data-card {
+    background: $blue;
+}
+
+.image-bar {
     width: 100%;
+    height: 250px;
+    max-height: 250px;
+    padding: 0;
+    margin: 0;
+    background-image: url("/assets/img/bar.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.userPhoto {
+    border-radius: 100%;
+    max-width: 140px;
+    position: absolute;
+    top: 150px;
+    border: 4px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.user-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card {
+    overflow: hidden;
 }
