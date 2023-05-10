@@ -7,22 +7,8 @@
     color: white;
 }
 
-.social{
-    margin: 0px 7px;
-    border: none;
-}
-
-.telegram{
-    background: $telegram-blue;
-}
-
-.instagram{
-    background: $instagram-pink;
-}
-
-
 .user-data-card {
-    background: $blue;
+    background: $gray;
 }
 
 .image-bar {
@@ -31,10 +17,10 @@
     max-height: 250px;
     padding: 0;
     margin: 0;
-    background-image: url("/assets/img/bar.png");
+    background-image: url("/assets/img/bar.gif");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
 }
 
 .userPhoto {
@@ -56,8 +42,4 @@
     font-size: 24px;
     font-weight: 700;
     margin: 0;
-}
-
-.card {
-    overflow: hidden;
 }

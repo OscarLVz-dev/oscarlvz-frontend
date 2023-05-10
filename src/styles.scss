@@ -1,9 +1,7 @@
-// style.scss
 @import "/node_modules/nes.css/css/nes.css";
 
-$blue: #7fad71;
-$blue-demon: #1f2638;
-$gray: #9aa4bf;
+$gray: #3e3f47;
+$gray-dark: #2b2c31;
 $telegram-blue: #29a9e9;
 $instagram-pink: #e801ce;
 
@@ -13,7 +11,7 @@ $instagram-pink: #e801ce;
 }
 
 body {
-    background: $blue-demon;
+    background: $gray-dark;
 }
 
 .center{
