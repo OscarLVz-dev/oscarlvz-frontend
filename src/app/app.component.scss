@@ -4,7 +4,7 @@
     text-align: center;
     font-size: 15px;
     font-weight: 700;
-    color: $gray;
+    color: white;
 }
 
 .social{
@@ -31,10 +31,10 @@
     max-height: 250px;
     padding: 0;
     margin: 0;
-    background-image: url("/assets/img/bar.jpg");
+    background-image: url("/assets/img/bar.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 .userPhoto {

@@ -1,11 +1,14 @@
-$blue: #1d2333;
-$blue-demon: #161b28;
+// style.scss
+@import "/node_modules/nes.css/css/nes.css";
+
+$blue: #7fad71;
+$blue-demon: #1f2638;
 $gray: #9aa4bf;
 $telegram-blue: #29a9e9;
 $instagram-pink: #e801ce;
 
 * {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     color: white;
 }
 
