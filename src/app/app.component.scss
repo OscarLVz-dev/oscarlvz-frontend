@@ -1,6 +1,6 @@
 @import "../styles.scss";
 
-.subtitle{
+.subtitle {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -44,15 +44,23 @@
     margin: 0;
 }
 
-.social-button{
+.social-button {
     margin: 0px 10px;
 }
 
-.fa-telegram, .fa-instagram, .fa-spotify {
+.fa-telegram,
+.fa-instagram,
+.fa-spotify {
     font-size: 25px;
 }
 
 .spotify-media {
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+    section {
+        margin: 10px !important;
+    }
 }
