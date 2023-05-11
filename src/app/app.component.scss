@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&display=swap');
+
 @import "../styles.scss";
 
 .subtitle {
@@ -81,7 +83,7 @@
     background: white;
 }
 
-.maps-media{
+.maps-media {
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -90,6 +92,34 @@
     border-radius: 15px;
     background: white;
 }
+
+/*--------------------- FOOTER ---------------------*/
+footer {
+    background-color: $gray;
+
+    * {
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 0;
+
+    .copyright {
+        font-size: 14px;
+
+        a {
+            color: white;
+            font-weight: 600;
+            font-size: 17px;
+        }
+    }
+}
+
+/*--------------------- FOOTER ---------------------*/
 
 @media only screen and (max-width: 576px) {
     section {
