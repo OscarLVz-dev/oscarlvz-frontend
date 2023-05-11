@@ -1,5 +1,14 @@
+//NES Styles
 @import "/node_modules/nes.css/css/nes.css";
 
+//Icons
+@import "./assets/fontawesome/scss/fontawesome.scss";
+@import "./assets/fontawesome/scss/solid.scss";
+@import "./assets/fontawesome/scss/brands.scss";
+@import "./assets/fontawesome/scss/regular.scss";
+$fa-font-path: "./assets/fontawesome/webfonts";
+
+//Colors
 $gray: #3e3f47;
 $gray-dark: #2b2c31;
 
