@@ -21,7 +21,7 @@ body {
     background: $gray-dark;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
@@ -32,6 +32,7 @@ body {
 }
 
 body.page-loaded {
+
     overflow: auto;
     overflow-x: hidden;
 }
@@ -49,100 +50,94 @@ body.page-loaded .preloader-cover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #202020;
+    background-color: $gray-dark;
     opacity: 1;
 }
 
-#cube-loader {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-}
-
-#cube-loader .caption {
-    margin: 0 auto;
-}
-
-#cube-loader .cube-loader {
-    width: 73px;
-    height: 73px;
-    margin: 0 auto;
-    margin-top: 49px;
-    position: relative;
-    transform: rotateZ(45deg);
-}
-
-#cube-loader .cube-loader .cube {
-    position: relative;
-    transform: rotateZ(45deg);
-    width: 50%;
-    height: 50%;
-    float: left;
-    transform: scale(1.1);
-}
-
-#cube-loader .cube-loader .cube:before {
-    content: "";
+.loader {
     position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 120px;
+    height: 14px;
+    border-radius: 0 0 15px 15px;
+    background-color: #3e494d;
+    box-shadow: 0 -1px 4px #5d6063 inset;
+    animation: panex 0.5s linear alternate infinite;
+    transform-origin: 170px 0;
+    z-index: 10;
+    perspective: 300px;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    left: calc(100% - 2px);
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f23849;
-    animation: cube-loader 2.76s infinite linear both;
-    transform-origin: 100% 100%;
+    z-index: -2;
+    height: 10px;
+    width: 70px;
+    border-radius: 0 4px 4px 0;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#6c4924, #4b2d21), linear-gradient(#4d5457 24px, transparent 0), linear-gradient(#9f9e9e 24px, transparent 0);
+    background-size: 50px 10px, 4px 8px, 24px 4px;
+    background-position: right center, 17px center, 0px center;
 }
 
-#cube-loader .cube-loader .loader-2 {
-    transform: scale(1.1) rotateZ(90deg);
+.loader::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -2;
+    transform: translate(-50%, -20px) rotate3d(75, -2, 3, 78deg);
+    width: 55px;
+    height: 53px;
+    background: #fff;
+    background-image:
+        radial-gradient(circle 3px, #fff6 90%, transparent 10%),
+        radial-gradient(circle 12px, #ffc400 90%, transparent 10%),
+        radial-gradient(circle 12px, #ffae00 100%, transparent 0);
+    background-repeat: no-repeat;
+    background-position: -4px -6px, -2px -2px, -1px -1px;
+    box-shadow: -2px -3px #0002 inset, 0 0 4px #0003 inset;
+    border-radius: 47% 36% 50% 50% / 49% 45% 42% 44%;
+    animation: eggRst 1s ease-out infinite;
 }
 
-#cube-loader .cube-loader .loader-3 {
-    transform: scale(1.1) rotateZ(180deg);
-}
-
-#cube-loader .cube-loader .loader-4 {
-    transform: scale(1.1) rotateZ(270deg);
-}
-
-#cube-loader .cube-loader .loader-2:before {
-    animation-delay: 0.35s;
-}
-
-#cube-loader .cube-loader .loader-3:before {
-    animation-delay: 0.69s;
-}
-
-#cube-loader .cube-loader .loader-4:before {
-    animation-delay: 1.04s;
-}
-
-.website-loading {
-    overflow-y: scroll;
-}
-
-.website-loading .site {
-    overflow: hidden;
-    height: 1vh;
-}
-
-@keyframes cube-loader {
+@keyframes eggRst {
     0%,
-    10% {
-        transform: perspective(136px) rotateX(-180deg);
+    100% {
+        transform: translate(-50%, -20px) rotate3d(90, 0, 0, 90deg);
         opacity: 0;
     }
-    25%,
-    75% {
-        transform: perspective(136px) rotateX(0deg);
+
+    10%,
+    90% {
+        transform: translate(-50%, -30px) rotate3d(90, 0, 0, 90deg);
         opacity: 1;
     }
-    90%,
+
+    25% {
+        transform: translate(-50%, -40px) rotate3d(85, 17, 2, 70deg)
+    }
+
+    75% {
+        transform: translate(-50%, -40px) rotate3d(75, -3, 2, 70deg)
+    }
+
+    50% {
+        transform: translate(-55%, -50px) rotate3d(75, -8, 3, 50deg)
+    }
+}
+
+@keyframes panex {
+    0% {
+        transform: rotate(-5deg)
+    }
+
     100% {
-        transform: perspective(136px) rotateY(180deg);
-        opacity: 0;
+        transform: rotate(10deg)
     }
 }
 
