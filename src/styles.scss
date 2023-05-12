@@ -52,12 +52,13 @@ body.page-loaded .preloader-cover {
     height: 100%;
     background-color: $gray-dark;
     opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loader {
-    position: absolute;
-    top: 50%;
-    left: 45%;
+    position: relative;
     width: 120px;
     height: 14px;
     border-radius: 0 0 15px 15px;
