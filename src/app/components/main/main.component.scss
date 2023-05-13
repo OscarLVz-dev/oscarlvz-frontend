@@ -91,34 +91,6 @@
     background: white;
 }
 
-/*--------------------- FOOTER ---------------------*/
-footer {
-    background-color: $gray;
-
-    * {
-        font-family: "Poppins", sans-serif;
-    }
-}
-
-.footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 26px 0;
-
-    .copyright {
-        font-size: 14px;
-
-        a {
-            color: white;
-            font-weight: 600;
-            font-size: 17px;
-        }
-    }
-}
-
-/*--------------------- FOOTER ---------------------*/
-
 @media only screen and (max-width: 576px) {
     section {
         margin: 10px !important;
