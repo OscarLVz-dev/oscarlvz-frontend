@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-widgets-list',
+  selector: 'widgets-list-component',
   templateUrl: './widgets-list.component.html',
   styleUrls: ['./widgets-list.component.scss']
 })
