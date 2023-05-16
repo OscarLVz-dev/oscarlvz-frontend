@@ -9,8 +9,21 @@ nav {
         color: white;
     }
 
+    .navbar-brand{
+        font-weight: 800;
+    }
+
+    .navbar-brand:hover{
+        text-decoration: none;
+    }
+
+    .nav-link{
+        margin-left: 10px;
+    }
+
     .active {
-        color: white;
-        border-bottom: 1px solid white;
+        font-weight: 800;
+        color: $gray-light;
+        text-decoration: underline;
     }
 }
