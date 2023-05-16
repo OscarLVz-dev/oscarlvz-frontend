@@ -1,10 +1,11 @@
 @import "/src/assets/scss/colors.scss";
+@import "/src/assets/scss/fonts.scss";
 
 footer {
     background-color: $gray;
 
     * {
-        font-family: "Poppins", sans-serif;
+        font-family: $font-base;
     }
 }
 

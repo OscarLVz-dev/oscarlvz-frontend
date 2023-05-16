@@ -1,7 +1,8 @@
 @import "/src/assets/scss/colors.scss";
+@import "/src/assets/scss/fonts.scss";
 
 .subtitle {
-    font-family: 'Press Start 2P', cursive;
+    font-family: $font-primary;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -9,7 +10,7 @@
 }
 
 .nes-btn{
-    font-family: 'Press Start 2P', cursive;
+    font-family: $font-primary;
 }
 
 .user-data-card {
