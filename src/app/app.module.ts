@@ -7,7 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/commons/footer/footer.component';
 import { WidgetsListComponent } from './components/pages/widgets-list/widgets-list.component';
-import { NavbarComponent } from './components/commons/navbar/navbar.component'
+import { NavbarComponent } from './components/commons/navbar/navbar.component';
+import { ProjectsComponent } from './components/pages/projects/projects.component'
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NavbarComponent } from './components/commons/navbar/navbar.component'
     FooterComponent,
     WidgetsListComponent,
     NavbarComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
