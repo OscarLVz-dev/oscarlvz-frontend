@@ -1,0 +1,15 @@
+@import "/src/assets/scss/colors.scss";
+
+nav {
+    background-color: $gray;
+
+    * {
+        font-family: "Poppins", sans-serif;
+        color: white;
+    }
+
+    .active {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
