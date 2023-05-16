@@ -9,7 +9,7 @@
     color: white;
 }
 
-.nes-btn{
+.nes-btn {
     font-family: $font-primary;
 }
 
@@ -52,7 +52,8 @@
     margin: 0px 10px;
 }
 
-.fa-solid, .fa-brands {
+.fa-solid,
+.fa-brands {
     font-size: 25px;
 }
 
@@ -90,6 +91,20 @@
     border: none;
     border-radius: 15px;
     background: white;
+}
+
+.projects {
+    background: $black;
+
+    .logos{
+        display: flex;
+        justify-content: center;
+
+        .client-logo {
+            width: 70%;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 576px) {
