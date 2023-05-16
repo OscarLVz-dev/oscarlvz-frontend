@@ -16,6 +16,8 @@ nav {
 
         img{
             margin-right: 7px;
+            width: 27px;
+            height: 20px;
         }
     }
 
@@ -27,9 +29,18 @@ nav {
         margin-left: 10px;
     }
 
+    .nav-link:hover{
+        text-decoration: none;
+        color: $gray-light;
+    }
+
     .active {
         font-weight: 800;
         color: $gray-light;
+        text-decoration: underline;
+    }
+
+    .active:hover {
         text-decoration: underline;
     }
 }
