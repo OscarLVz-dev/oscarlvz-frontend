@@ -6,9 +6,16 @@
     background: $gray;
     padding: 0;
     .project-header{
-        img{
-            width: 100%;
-            border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: 300px;
+        background-image: url("/assets/img/clients/mc_page.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        border-radius: 15px 15px 0 0;
+
+        .client-logo {
+            width: 80%;
         }
     }
     .project-content{
