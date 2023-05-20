@@ -1,0 +1,49 @@
+@import "/src/assets/scss/colors.scss";
+@import "/src/assets/scss/fonts.scss";
+
+.project-card{
+    border-radius: 15px;
+    background: $gray;
+    padding: 0;
+    .project-header{
+        img{
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+    }
+    .project-content{
+        padding: 15px 30px !important;
+
+        .title{
+            a{
+                font-weight: 700;
+                color: white;
+            }
+            span{
+                color: $red;
+            }
+        }
+    }
+
+    .project-footer{
+        margin-bottom: 20px;
+        a{
+            width: 100%;
+        }
+        button{
+            width: 90%;
+            font-family: $font-primary;
+            background: $red;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section {
+        margin: 12px !important;
+    }
+
+    .full{
+        margin: 0px !important;
+    }
+}
