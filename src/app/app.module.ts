@@ -8,7 +8,8 @@ import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/commons/footer/footer.component';
 import { WidgetsListComponent } from './components/pages/widgets-list/widgets-list.component';
 import { NavbarComponent } from './components/commons/navbar/navbar.component';
-import { ProjectsComponent } from './components/pages/projects/projects.component'
+import { ProjectsComponent } from './components/pages/projects/projects.component';
+import { InstagramWidgetComponent } from './components/commons/widgets/instagram-widget/instagram-widget.component'
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProjectsComponent } from './components/pages/projects/projects.componen
     WidgetsListComponent,
     NavbarComponent,
     ProjectsComponent,
+    InstagramWidgetComponent,
   ],
   imports: [
     BrowserModule,
