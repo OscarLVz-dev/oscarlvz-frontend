@@ -11,6 +11,7 @@ export class InstagramWidgetComponent {
   @Input()
   url:string;
   urlSafe: SafeResourceUrl;
+  isLoading:Boolean = true;
 
   constructor(public sanitizer: DomSanitizer) { }
 

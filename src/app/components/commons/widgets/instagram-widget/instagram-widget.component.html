@@ -1,1 +1,2 @@
-<iframe class="shadow" [src]="urlSafe" allowtransparency="true" allowfullscreen="true" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" frameborder="0"></iframe>
+<span class="widget-loader" *ngIf="isLoading"></span>
+<iframe class="shadow" [src]="urlSafe" (load)="isLoading=false" [class.d-none]="isLoading" allowtransparency="true" allowfullscreen="true" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" frameborder="0"></iframe>
