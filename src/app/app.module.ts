@@ -10,7 +10,8 @@ import { WidgetsListComponent } from './components/pages/widgets-list/widgets-li
 import { NavbarComponent } from './components/commons/navbar/navbar.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { InstagramWidgetComponent } from './components/commons/widgets/instagram-widget/instagram-widget.component';
-import { SpotifyWidgetComponent } from './components/commons/widgets/spotify-widget/spotify-widget.component'
+import { SpotifyWidgetComponent } from './components/commons/widgets/spotify-widget/spotify-widget.component';
+import { GoogleMapsWidgetComponent } from './components/commons/widgets/google-maps-widget/google-maps-widget.component'
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SpotifyWidgetComponent } from './components/commons/widgets/spotify-wid
     ProjectsComponent,
     InstagramWidgetComponent,
     SpotifyWidgetComponent,
+    GoogleMapsWidgetComponent,
   ],
   imports: [
     BrowserModule,
