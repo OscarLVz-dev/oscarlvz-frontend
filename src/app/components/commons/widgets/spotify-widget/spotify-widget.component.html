@@ -1,1 +1,2 @@
-<p>spotify-widget works!</p>
+<span class="widget-loader" *ngIf="isLoading"></span>
+<iframe [src]="urlSafe" (load)="isLoading=false" [class.d-none]="isLoading" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
