@@ -14,8 +14,9 @@ $fa-font-path: "./assets/fontawesome/webfonts";
 //Colors
 @import "./assets/scss/colors.scss";
 
-//Preloader
+//Loaders
 @import "./assets/scss/preloader.scss";
+@import "./assets/scss/widgetLoader.scss";
 
 * {
     font-family: $font-base;
