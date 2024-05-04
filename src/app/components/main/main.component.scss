@@ -105,6 +105,24 @@
 
 }
 
+.turtle {
+    height: 24px;
+    width: 40px;
+    position: relative;
+}
+
+.t1 {
+    animation-name: example;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes example {
+    0%   {left: 0%}
+    100%  {left: 100%}
+  }
+
 @media only screen and (max-width: 576px) {
     section {
         margin: 12px !important;
