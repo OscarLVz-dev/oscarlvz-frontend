@@ -1,9 +1,17 @@
 @import "/src/assets/scss/colors.scss";
 @import "/src/assets/scss/fonts.scss";
 
-footer {
-    background-color: $black;
 
+footer {
+    .bar-btn-mario {
+        background-image: url("/assets/img/mario/BrickBlockDark.png");
+        height: 16px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    
     * {
         font-family: $font-base;
     }
@@ -12,6 +20,11 @@ footer {
     left:0px;
     bottom:0px;
     width:100%;
+}
+
+.footer-cont {
+    background-color: $black;
+
 }
 
 .footer-bottom {
@@ -38,5 +51,26 @@ footer {
         a:hover{
             color: $gray-light;
         }
+    }
+}
+
+.m1 {
+    position: relative;
+    animation-name: example;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: scaleX(-1);
+}
+
+@keyframes example {
+    0%   {left: 100%}
+    100%  {left: -10%}
+}
+
+
+@media only screen and (max-width: 576px) {
+    .m1 {
+        animation-duration: 7s;
     }
 }
