@@ -1,12 +1,40 @@
 @import "/src/assets/scss/colors.scss";
 @import "/src/assets/scss/fonts.scss";
 
+.userPhoto {
+    max-width: 100px;
+    border-radius: 100%;
+    border: 4px solid white;
+    display: inline-block;
+}
+
+.user-name {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 700;
+    display: inline-block;
+}
+
 .subtitle {
     font-family: $font-primary;
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 14px;
     font-weight: 700;
     color: $mario-back-gold;
+}
+
+.pl1 {
+    position: relative;
+    left: 30%;
+}
+
+.social-button {
+    margin: 0px 10px;
+}
+
+.fa-solid,
+.fa-brands {
+    font-size: 19px;
 }
 
 .nes-btn {
@@ -22,90 +50,27 @@
 .user-data-card {
     border-radius: 0px 0px 15px 15px;
     overflow: hidden;
-    position: relative;
-    transform: translateY(22%);
-    z-index: 1;
 
     .row{
         background: #000000;
-    }
-}
-
-.bar-top-mario {
-    background-image: url("/assets/img/mario/BrickBlockDark.png");
-    background-size: 16px 16px;
-    height: 16px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.bar-btn-mario {
-    background-image: url("/assets/img/mario/BrickBlockDark.png");
-    height: 32px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.userPhoto {
-    max-width: 140px;
-    border-radius: 100%;
-    border: 4px solid white;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.user-name {
-    text-align: center;
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0;
-}
-
-.social-button {
-    margin: 0px 10px;
-}
-
-.fa-solid,
-.fa-brands {
-    font-size: 25px;
-}
-
-.calendar-media {
-    width: 100%;
-    height: 500px;
-    margin: 0px;
-    padding: 10px;
-    border: none;
-    border-radius: 15px;
-    background: white;
-}
-
-.maps-media {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    border-radius: 15px;
-    background: white;
-}
-
-.projects {
-    background: $gray;
-
-    .logos{
-        display: flex;
-        justify-content: center;
-
-        .client-logo {
-            width: 70%;
+        
+        .bar-top-mario {
+            background-image: url("/assets/img/mario/BrickBlockDark.png");
+            background-size: 16px 16px;
+            height: 16px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .bar-btn-mario {
+            background-image: url("/assets/img/mario/BrickBlockDark.png");
+            height: 32px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
         }
     }
-
 }
 
 .turtle {
@@ -122,16 +87,25 @@
 
 }
 
-.pl1 {
-    position: relative;
-    left: 15%;
-}
-
 .cn1 {
     position: relative;
     right: -80%;
     transform: translateY(-50%);
     margin-right: 5px;
+}
+
+.projects {
+    background: $gray;
+
+    .logos{
+        display: flex;
+        justify-content: center;
+
+        .client-logo {
+            width: 70%;
+        }
+    }
+
 }
 
 @keyframes example {
@@ -146,5 +120,18 @@
 
     .full{
         margin: 0px !important;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .user-name {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+        margin-left: 5px;
     }
 }
