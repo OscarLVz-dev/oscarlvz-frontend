@@ -9,15 +9,13 @@
 }
 
 .user-name {
-    text-align: left;
     font-size: 22px;
     font-weight: 700;
-    display: inline-block;
+    width: 100%;
 }
 
 .subtitle {
     font-family: $font-primary;
-    text-align: left;
     font-size: 14px;
     font-weight: 700;
     color: $mario-back-gold;
@@ -26,10 +24,6 @@
 .pl1 {
     position: relative;
     left: 30%;
-}
-
-.social-button {
-    margin: 0px 10px;
 }
 
 .fa-solid,
@@ -41,6 +35,7 @@
     font-family: $font-primary;
     background: #008088 !important;
     box-shadow: inset -4px -4px #005a60 !important;
+    margin-top: 0px !important;
 }
 
 .nes-btn::after {
