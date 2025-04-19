@@ -56,11 +56,17 @@ footer {
 
 .m1 {
     position: relative;
-    animation-name: example;
-    animation-duration: 32s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: example 32s linear infinite;
     transform: scaleX(-1);
+
+    &:active {
+        animation: example 32s linear infinite, jump 0.5s ease-in-out;
+        //background-image: url("/assets/img/mario/BrickBlockDark.png");
+    }
+}
+
+.frase {
+    font-weight: 500 !important;
 }
 
 @keyframes example {
@@ -68,6 +74,11 @@ footer {
     100%  {left: -10%}
 }
 
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-35px); }
+    100% { transform: translateY(0); }
+}
 
 @media only screen and (max-width: 576px) {
     .m1 {
